@@ -1,7 +1,30 @@
-<h1>My_Trello Home</h1>
-<p>
-	This is the home page for the
-	<a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
-	sample application.
-</p>
+<body background="http://images.123hdwallpapers.com/20150705/pen-paper-handwriting-1920x1200.jpg">
+
+<div class="center jumbotron">
+
+	<% provide(:title, "Home") %>
+
+
+	<div class="welcome">
+
+		<div id="logo">
+		<%= link_to image_tag("mytrello_logo.png", alt: "My Trello logo", height: "150", width: "150"), '#' %> 
+        </div>
+
+		<div id="welcome-text">
+
+			<h1> My Trello</h1>
+
+			<h2> <strong> My Trello is the free, flexible, and visual way to organize anything with anyone. </strong> </h2>
+
+			<h4>
+				Drop the lengthy email threads, out-of-date spreadsheets, no-longer-so-sticky notes, and clunky software for managing your projects. My Trello lets you see everything about your project in a single glance.
+			</h4>
+		</div>
+		<%= link_to "Sign Up - it's Free!", signup_path , class: "btn btn-lg btn-primary" %>
+	</div>
+
+</div>
+
+
 

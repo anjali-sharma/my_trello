@@ -1,0 +1,89 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	padding-top: 30px;
+	margin-top: 90px;
+}
+
+section {
+	overflow: auto;
+}
+
+textarea {
+	resize: vertical;
+}
+
+.center {
+	text-align: center;
+	background-color: grey;
+	opacity: 0.8;
+
+	.welcome {
+	    margin-top: -20px;
+		margin-bottom: 40px;
+		color: #000000;
+		font-family: serif;
+
+	    #welcome-text {
+	        margin-top: -30px;
+	    	font-family: 'Impact';
+	    }
+
+	    
+	}
+}
+
+/* header */
+
+.header {
+		
+	.navbar {
+		opacity: 0.9;
+		font-family: serif;
+	}
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #000000;
+}
+
+footer a:hover {
+  color: #555;
+  text-decoration: none;
+
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
+
+/* Sign Up */
+#signup {
+	text-align: center;
+	
+	h1 {
+		font-family: 'Impact';
+	}	
+}
+
+
