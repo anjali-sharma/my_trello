@@ -89,7 +89,7 @@ footer ul li {
 }
 
 /* Login - Sign Up */
-.login-signup {
+.login-signup-edit-all {
 	
 	h1 {
 		font-family: 'Impact';
@@ -191,4 +191,16 @@ input {
 .btn {
 	font-family: 'Serif';
 	font-size: 20px;
+}
+
+/* Users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-bottom: 1px solid $gray-lighter;
+  }
 }

@@ -1,0 +1,13 @@
+<div class="login-signup-edit-all">
+	<% provide(:title, 'All users') %>
+	<h1>My Trello users</h1>
+
+	<%= will_paginate %>
+
+	<ul class="users">
+		<%= render @users %>
+	</ul>
+
+	<%= will_paginate %>
+
+</div>
