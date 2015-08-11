@@ -88,8 +88,8 @@ footer ul li {
   margin-left: 15px;
 }
 
-/* Sign Up */
-#signup {
+/* Login - Sign Up */
+.login-signup {
 	
 	h1 {
 		font-family: 'Impact';
@@ -170,6 +170,20 @@ input {
   .form-control {
     color: $state-danger-text;
   }
+}
+
+.checkbox {
+  margin-top: -10px;
+  margin-bottom: 10px;
+  span {
+    margin-left: 20px;
+    font-weight: normal;
+  }
+}
+
+#session_remember_me {
+  width: auto;
+  margin-left: 0;
 }
 
 /* buttons */
