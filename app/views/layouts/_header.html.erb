@@ -1,6 +1,10 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
-    <%= link_to "My Trello", 'static_pages/home', id: "logo" %>
+
+    <div class="navbar-header">
+      <a class="navbar-brand" href= 'static_pages/home' >My Trello</a>
+    </div>
+    
     <nav>
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home",   root_path %></li>

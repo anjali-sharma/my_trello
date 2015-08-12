@@ -17,3 +17,9 @@ User.create(name: "Example User",
 		activated: true,
 		activated_at: Time.zone.now)
 end
+
+users = User.order(:created_at).take(10)
+10.times do |n|
+	title = "Board-#{n}"
+	users.each { |user| user.boards.create!(title: title) }
+end 

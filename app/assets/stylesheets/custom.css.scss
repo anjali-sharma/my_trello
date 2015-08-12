@@ -209,3 +209,102 @@ input {
   float: right;
   link-style: none;
 }
+
+/* Boards */
+
+.boards {
+  list-style: none;
+  padding: 0;
+
+  #board {
+    margin: 10px;
+    border: 1px solid black;
+    background-color: #C0C0C0;
+    border-radius: 5px;
+    float: center;
+  }
+
+  li {
+    padding: 10px;
+    border-top: 1px solid #e8e8e8;
+  }
+
+  .user {
+    margin-top: 10em;
+    padding-top: 0;
+  }
+
+  .title {
+
+    display: block;
+
+
+    img {
+      display: block;
+      padding: 5px 0;
+    }
+  }
+
+  .timestamp {
+    color: $gray-light;
+    display: block;
+
+    #board-delete {
+      float: right;
+    }
+  }
+
+  .gravatar {
+    float: left;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+}
+
+aside {
+  textarea {
+    height: 100px;
+    margin-bottom: 5px;
+  }
+}
+
+span.picture {
+  margin-top: 10px;
+  input {
+    border: 0;
+  }
+}
+
+/* profile */
+
+.profile {
+  h1 {
+    font-family: 'Impact';
+    font-size: 25px;
+  }
+
+  h4 {
+    margin-left: 10px;
+    font-family: 'Times';
+  }
+  
+}
+
+#del {
+  float: right;
+  font-size: 16px;
+}
+
+/* board-form */
+
+#board-field {
+    margin-bottom: 10px;
+    border: 1px solid black;
+    background-color: #C0C0C0;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#create-board {
+  font-size: 16px;
+}
