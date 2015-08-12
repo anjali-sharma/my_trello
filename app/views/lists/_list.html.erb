@@ -1,0 +1,10 @@
+<li id="list">
+	<span class="title"><%= list.title %></span>
+	<span class="timestamp">
+		Posted <%= time_ago_in_words(list.created_at) %> ago.
+		<% if current_user?(list.user) %>
+		<%= link_to "delete", list, method: :delete,
+		data: {confirm: "You sure?" }, id: "list-delete" %>
+		<% end %>
+	</span>
+</li>

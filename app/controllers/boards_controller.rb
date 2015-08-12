@@ -1,6 +1,13 @@
 class BoardsController < ApplicationController
+	
 	before_action :logged_in_user, only: [:create, :destroy]
 	before_action :correct_user, only: :destroy
+
+    def show
+    	 @board = current_user.boards.find_by(id: params[:id])
+    	  # binding.pry
+    	 # @lists = @board.lists.all
+    end
 
 	def create
 		@board = current_user.boards.build(board_params)

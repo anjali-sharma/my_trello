@@ -22,4 +22,11 @@ users = User.order(:created_at).take(10)
 10.times do |n|
 	title = "Board-#{n}"
 	users.each { |user| user.boards.create!(title: title) }
-end 
+end
+
+user = User.find_by(email: "example@railstutorial.org");
+10.times do |n|
+	title = "List-#{n}"
+	user.boards.each { |board| board.lists.create!(title: title) }
+end
+

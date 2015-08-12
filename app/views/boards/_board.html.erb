@@ -1,6 +1,7 @@
 
 <li id="board">
-	<span class="title"><%= board.title %></span>
+	<span class="title">
+		<%= link_to board.title, "/boards/#{ @board.id}" %></span>
 	<span class="timestamp">
 		Posted <%= time_ago_in_words(board.created_at) %> ago.
 		<% if current_user?(board.user) %>

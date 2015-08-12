@@ -1,0 +1,17 @@
+<% provide(:title, @board.name) %>
+<div class="row">
+	<div id="board-info">
+		<h1> @board.name </h1>
+	</div>
+
+	<div class="col-md-8">
+		<% if @board.lists.any? %>
+		<h3>Lists (<%= @board.lists.count %>)</h3>
+		<ol class="lists">
+			<%= render @lists %>
+		</ol>
+		<%= will_paginate @lists %>
+		<% end %>
+	</div>
+
+</div>
